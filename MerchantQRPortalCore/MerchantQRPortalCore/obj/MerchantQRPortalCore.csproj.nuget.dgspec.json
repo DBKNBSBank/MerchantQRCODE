@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kaunda.dum\\Documents\\Visual Studio 2019\\Projects\\MerchantQRPortalCore\\MerchantQRPortalCore\\MerchantQRPortalCore.csproj": {}
+    "C:\\Users\\kaunda.dum\\Documents\\Visual Studio 2019\\Projects\\MerchantQRPortalCoreApp\\MerchantQRPortalCore\\MerchantQRPortalCore\\MerchantQRPortalCore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kaunda.dum\\Documents\\Visual Studio 2019\\Projects\\MerchantQRPortalCore\\MerchantQRPortalCore\\MerchantQRPortalCore.csproj": {
+    "C:\\Users\\kaunda.dum\\Documents\\Visual Studio 2019\\Projects\\MerchantQRPortalCoreApp\\MerchantQRPortalCore\\MerchantQRPortalCore\\MerchantQRPortalCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kaunda.dum\\Documents\\Visual Studio 2019\\Projects\\MerchantQRPortalCore\\MerchantQRPortalCore\\MerchantQRPortalCore.csproj",
+        "projectUniqueName": "C:\\Users\\kaunda.dum\\Documents\\Visual Studio 2019\\Projects\\MerchantQRPortalCoreApp\\MerchantQRPortalCore\\MerchantQRPortalCore\\MerchantQRPortalCore.csproj",
         "projectName": "MerchantQRPortalCore",
-        "projectPath": "C:\\Users\\kaunda.dum\\Documents\\Visual Studio 2019\\Projects\\MerchantQRPortalCore\\MerchantQRPortalCore\\MerchantQRPortalCore.csproj",
+        "projectPath": "C:\\Users\\kaunda.dum\\Documents\\Visual Studio 2019\\Projects\\MerchantQRPortalCoreApp\\MerchantQRPortalCore\\MerchantQRPortalCore\\MerchantQRPortalCore.csproj",
         "packagesPath": "C:\\Users\\kaunda.dum\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kaunda.dum\\Documents\\Visual Studio 2019\\Projects\\MerchantQRPortalCore\\MerchantQRPortalCore\\obj\\",
+        "outputPath": "C:\\Users\\kaunda.dum\\Documents\\Visual Studio 2019\\Projects\\MerchantQRPortalCoreApp\\MerchantQRPortalCore\\MerchantQRPortalCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

@@ -22,8 +22,9 @@
 
   <ItemGroup>
     <Reference Include="KoClient">
-      <HintPath>..\..\MerchantQRPortal\MerchantQRPortal\bin\KoClient.dll</HintPath>
+      <HintPath>bin\Debug\KoClient.dll</HintPath>
     </Reference>
   </ItemGroup>
+
 
 </Project>

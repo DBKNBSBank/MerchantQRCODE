@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZkAUlhUBTLRFV9JHpuakfUQL6soMfkxMe8qlvx3Tkdh9NVU5yQ04trUwb/LH9tvCGfOX4Inzr5cMaNJc1jAnAQ==",
+  "dgSpecHash": "3Wt6yyWn/oFbwIFZ9znpm1iPJSxOPJBGvfQ7TB/afdAPS6SXN+S5TjYiXzpIf4/ssL3K398i0qQewoBQkWXj+Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kaunda.dum\\Documents\\Visual Studio 2019\\Projects\\MerchantQRPortalCore\\MerchantQRPortalCore\\MerchantQRPortalCore.csproj",
+  "projectFilePath": "C:\\Users\\kaunda.dum\\Documents\\Visual Studio 2019\\Projects\\MerchantQRPortalCoreApp\\MerchantQRPortalCore\\MerchantQRPortalCore\\MerchantQRPortalCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kaunda.dum\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\2.2.0\\microsoft.aspnetcore.cryptography.internal.2.2.0.nupkg.sha512",
     "C:\\Users\\kaunda.dum\\.nuget\\packages\\microsoft.aspnetcore.dataprotection\\2.2.0\\microsoft.aspnetcore.dataprotection.2.2.0.nupkg.sha512",
