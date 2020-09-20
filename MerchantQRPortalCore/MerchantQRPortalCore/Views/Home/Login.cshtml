@@ -32,7 +32,7 @@
         </div>
 
 
-        <div class="form-group">
+        @*<div class="form-group">
             @Html.LabelFor(model => model.UserRole, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-4">
                 @Html.DropDownList("RoleName",
@@ -41,10 +41,10 @@
                         new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.UserRole, "", new { @class = "text-danger" })
             </div>
-        </div>
+        </div>*@
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Log In" class="btn btn-primary" />
+                <input type="submit" value="Log In" class="btn btn-info" />
             </div>
         </div>
     </div>

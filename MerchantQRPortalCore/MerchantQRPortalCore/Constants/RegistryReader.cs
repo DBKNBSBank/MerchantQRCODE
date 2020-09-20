@@ -10,7 +10,7 @@ namespace MerchantQRPortalCore.Constants
     {
         public static string ReadString(string key)
         {
-            var registryKey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\MerchantQR", false);
+            var registryKey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\MerchantQRPortal", false);
 
             if (registryKey is null) return string.Empty;
 
@@ -46,7 +46,13 @@ namespace MerchantQRPortalCore.Constants
 
             return value;
         }
-        
+        public static string GetUserManagementURL()
+        {
+            var value = ReadString("UserManagementURL");
+
+            return value;
+        }
+
     }
 
     

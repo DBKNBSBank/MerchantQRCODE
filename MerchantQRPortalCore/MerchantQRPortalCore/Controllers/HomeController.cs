@@ -11,6 +11,8 @@ using Microsoft.AspNetCore.Session;
 using MerchantQRPortalCore.ViewModels;
 using Newtonsoft.Json;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Win32;
+using MerchantQRPortalCore.Constants;
 
 namespace MerchantQRPortalCore.Controllers
 {
@@ -47,29 +49,29 @@ namespace MerchantQRPortalCore.Controllers
         {
             if (ModelState.IsValid)
             {
-                signInViewModel.RoleName = Convert.ToString(signInViewModel.UserRole);
+                //signInViewModel.RoleName = Convert.ToString(signInViewModel.UserRole);
 
-                _koWebClient.SetBaseUrl("http://10.40.1.93:44323");
+                _koWebClient.SetBaseUrl(RegistryReader.GetUserManagementURL());
                 _koWebClient.SetAcceptHeader("application/json");
                 _koWebClient.SetContentTypeHeader("application/json");
 
-                string url = "api/auth/login";
+                string url = "api/login";
 
                 string json = JsonConvert.SerializeObject(signInViewModel);
 
                 string response = _koWebClient.UploadString(url, json);
 
-                var jsonResult = JsonConvert.DeserializeObject<JsonResultViewModel<LoginResponse>>(response);
+                var jsonResult = JsonConvert.DeserializeObject<JsonResultViewModel<SignInViewModel>>(response);
 
-                if (jsonResult.ErrorCode == 0)
+                if (jsonResult.success)
                 {
                     HttpContext.Session.SetString(signInViewModel.UserName, "UserName");
-                    HttpContext.Session.SetString(signInViewModel.RoleName, "RoleName");
-                    HttpContext.Session.SetString(jsonResult.Data.Token, "Token");
+                    HttpContext.Session.SetString(jsonResult.roleslug, "roleSlug");
+                    HttpContext.Session.SetString(jsonResult.token, "Token");
 
-                    return RedirectToAction("Index", "Merchants");
 
                 }
+                return RedirectToAction("Index", "Merchants");
 
             }
 

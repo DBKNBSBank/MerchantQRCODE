@@ -12,8 +12,8 @@ namespace MerchantQRPortalCore.ViewModels
         public string UserName { get; set; }
         [Required]
         public string Password { get; set; }
-        public UserRole UserRole { get; set; }
-        public string RoleName { get; set; }
+        //public UserRole UserRole { get; set; }
+        //public string RoleName { get; set; }
     }
     public enum UserRole 
     {

@@ -85,10 +85,10 @@ namespace MerchantQRPortalCore.Controllers
             {
                 qRCodeResource.DateCreated = DateTime.Now;
 
+                string url = RegistryReader.PostMerchantURL();
+
                 string json = JsonConvert.SerializeObject(qRCodeResource);
 
-                string url = RegistryReader.PostMerchantURL();
-                
                 _koWebClient.UploadString(url, json);
 
                 await LogUserActions();
@@ -110,7 +110,7 @@ namespace MerchantQRPortalCore.Controllers
 
                     Action = "Created a QR Code",
                     DateConducted = DateTime.Now,
-                    Rolename = HttpContext.Session.GetString(signInViewModel.RoleName),
+                    //Rolename = HttpContext.Session.GetString(signInViewModel.RoleName),
                     Username = HttpContext.Session.GetString(signInViewModel.UserName)
 
                 }) ;
